@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MURAD UNITED STUDIO </title>
+    <title>MURAD UNITED STUDIO</title>
     
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -141,61 +141,83 @@
     <div class="glow-blob-2"></div>
     <div class="glow-blob-3"></div>
 
-    <!-- Static Navigation Header -->
-    <header class="w-full z-50 glass-panel border-b border-sky-400/20 transition-all duration-300" id="navbar">
-        <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 py-3 sm:h-20 flex flex-col md:flex-row items-center justify-between gap-3">
-            
-            <!-- Logo & Studio Branding (3 Line Name) -->
-            <!-- 3-LINE BRAND LOGO HEADER -->
-                <a href="#home" class="flex items-center gap-3 group self-start md:self-auto py-1">
-                    <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cobalt-600 via-neon-blue to-neon-cyan flex items-center justify-center p-0.5 shadow-lg shadow-cobalt-500/30 group-hover:scale-105 transition-transform shrink-0">
-                        <div class="w-full h-full bg-slate-950 rounded-[10px] flex items-center justify-center">
-                            <i class="fa-solid font-bold fa-atom text-neon-blue text-xl group-hover:rotate-180 transition-transform duration-700"></i>
-                        </div>
-                    </div>
-                    
-                    <!-- EXPLICIT 3-LINE LOGO TEXT -->
-                    <div class="flex flex-col justify-center leading-none select-none">
-                        <span class="font-display font-black text-xs md:text-sm tracking-widest text-slate-100 uppercase group-hover:text-neon-blue transition-colors">MURAD</span>
-                        <span class="font-display font-black text-xs md:text-sm tracking-widest text-neon-blue uppercase text-glow">UNITED</span>
-                        <span class="font-display font-black text-[10px] md:text-xs tracking-widest text-slate-300 uppercase">STUDIO</span>
-                    </div>
 
-                    <span class="ml-1 px-2 py-0.5 text-[9px] font-bold tracking-wider uppercase bg-cobalt-500/20 text-neon-blue border border-neon-blue/30 rounded-full hidden xs:inline-block">
-                        PRO
-                    </span>
-                </a>
-
-            <!-- Static Navigation Links (Responsive Flex Wrap) -->
-            <nav class="flex flex-wrap items-center justify-center gap-1 sm:gap-2">
-                <button onclick="switchView('home')" class="nav-btn px-2.5 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-medium text-slate-200 hover:text-cyan-300 hover:bg-cyan-500/15 transition-all active-nav" data-target="home">
-                    <i class="fa-solid fa-house mr-1 text-xs"></i> Home
-                </button>
-                <button onclick="switchView('services')" class="nav-btn px-2.5 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-medium text-slate-200 hover:text-cyan-300 hover:bg-cyan-500/15 transition-all" data-target="services">
-                    <i class="fa-solid fa-microscope mr-1 text-xs"></i> Services
-                </button>
-                <button onclick="switchView('portfolio')" class="nav-btn px-2.5 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-medium text-slate-200 hover:text-cyan-300 hover:bg-cyan-500/15 transition-all" data-target="portfolio">
-                    <i class="fa-solid fa-flask-vial mr-1 text-xs"></i> Projects
-                </button>
-                <button onclick="switchView('founder')" class="nav-btn px-2.5 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-medium text-slate-200 hover:text-cyan-300 hover:bg-cyan-500/15 transition-all" data-target="founder">
-                    <i class="fa-solid fa-user-tie mr-1 text-xs"></i> Founder
-                </button>
-                <button onclick="switchView('testimonials')" class="nav-btn px-2.5 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-medium text-slate-200 hover:text-cyan-300 hover:bg-cyan-500/15 transition-all" data-target="testimonials">
-                    <i class="fa-solid fa-comments mr-1 text-xs"></i> Reviews
-                </button>
-                <button onclick="switchView('contact')" class="nav-btn px-2.5 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-medium text-slate-200 hover:text-cyan-300 hover:bg-cyan-500/15 transition-all" data-target="contact">
-                    <i class="fa-solid fa-sliders mr-1 text-xs"></i> Estimator
-                </button>
-            </nav>
-
-            <!-- Direct Action Button -->
-            <div class="flex items-center">
-                <button onclick="openBookingModal()" class="px-4 py-2 rounded-xl bg-gradient-to-r from-cyan-500 via-sky-500 to-blue-600 text-white font-semibold text-xs sm:text-sm shadow-lg shadow-cyan-500/30 hover:scale-105 transition-all flex items-center shrink-0">
-                    <i class="fa-brands fa-whatsapp text-base mr-1.5"></i> Book Consultation
-                </button>
+<!-- Static Navigation Header -->
+<header class="w-full z-50 glass-panel border-b border-sky-400/20 transition-all duration-300 sticky top-0" id="navbar">
+    <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 py-2.5 sm:h-20 flex items-center justify-between">
+        
+        <!-- Logo & Studio Branding -->
+        <a href="#home" class="flex items-center gap-2 sm:gap-3 group py-1">
+            <div class="w-8 h-8 sm:w-10 sm:h-10 rounded-lg sm:rounded-xl bg-gradient-to-tr from-cobalt-600 via-neon-blue to-neon-cyan flex items-center justify-center p-0.5 shadow-lg shadow-cobalt-500/30 group-hover:scale-105 transition-transform shrink-0">
+                <div class="w-full h-full bg-slate-950 rounded-[8px] sm:rounded-[10px] flex items-center justify-center">
+                    <i class="fa-solid font-bold fa-atom text-cyan-400 text-sm sm:text-xl group-hover:rotate-180 transition-transform duration-700"></i>
+                </div>
             </div>
+            
+            <div class="flex flex-col justify-center leading-none select-none">
+                <span class="font-display font-black text-xs sm:text-sm tracking-widest text-slate-100 uppercase group-hover:text-cyan-400 transition-colors">MURAD</span>
+                <span class="font-display font-black text-xs sm:text-sm tracking-widest text-cyan-400 uppercase">UNITED</span>
+                <span class="font-display font-black text-[9px] sm:text-xs tracking-widest text-slate-300 uppercase">STUDIO</span>
+            </div>
+        </a>
+
+        <!-- Desktop Navigation Links (Hidden on mobile) -->
+        <nav class="hidden md:flex items-center gap-2">
+            <button onclick="switchView('home')" class="nav-btn px-3 py-1.5 rounded-lg text-sm font-medium text-slate-200 hover:text-cyan-300 hover:bg-cyan-500/15 transition-all active-nav" data-target="home">
+                <i class="fa-solid fa-house mr-1 text-xs"></i> Home
+            </button>
+            <button onclick="switchView('services')" class="nav-btn px-3 py-1.5 rounded-lg text-sm font-medium text-slate-200 hover:text-cyan-300 hover:bg-cyan-500/15 transition-all" data-target="services">
+                <i class="fa-solid fa-microscope mr-1 text-xs"></i> Services
+            </button>
+            <button onclick="switchView('portfolio')" class="nav-btn px-3 py-1.5 rounded-lg text-sm font-medium text-slate-200 hover:text-cyan-300 hover:bg-cyan-500/15 transition-all" data-target="portfolio">
+                <i class="fa-solid fa-flask-vial mr-1 text-xs"></i> Projects
+            </button>
+            <button onclick="switchView('founder')" class="nav-btn px-3 py-1.5 rounded-lg text-sm font-medium text-slate-200 hover:text-cyan-300 hover:bg-cyan-500/15 transition-all" data-target="founder">
+                <i class="fa-solid fa-user-tie mr-1 text-xs"></i> Founder
+            </button>
+            <button onclick="switchView('testimonials')" class="nav-btn px-3 py-1.5 rounded-lg text-sm font-medium text-slate-200 hover:text-cyan-300 hover:bg-cyan-500/15 transition-all" data-target="testimonials">
+                <i class="fa-solid fa-comments mr-1 text-xs"></i> Reviews
+            </button>
+            <button onclick="switchView('contact')" class="nav-btn px-3 py-1.5 rounded-lg text-sm font-medium text-slate-200 hover:text-cyan-300 hover:bg-cyan-500/15 transition-all" data-target="contact">
+                <i class="fa-solid fa-sliders mr-1 text-xs"></i> Estimator
+            </button>
+        </nav>
+
+        <!-- Right Side: Booking Button & Mobile Hamburger Toggle -->
+        <div class="flex items-center gap-2">
+            <button onclick="openBookingModal()" class="px-3 py-1.5 sm:px-4 sm:py-2 rounded-xl bg-gradient-to-r from-cyan-500 via-sky-500 to-blue-600 text-white font-semibold text-xs sm:text-sm shadow-lg shadow-cyan-500/30 hover:scale-105 transition-all flex items-center shrink-0">
+                <i class="fa-brands fa-whatsapp text-base mr-1.5"></i> <span class="hidden xs:inline">Book </span>Consultation
+            </button>
+
+            <!-- Mobile Menu Toggle Button -->
+            <button onclick="toggleMobileMenu()" class="md:hidden w-9 h-9 rounded-xl glass-panel border border-cyan-400/30 flex items-center justify-center text-cyan-300 hover:text-white transition-all">
+                <i id="mobileMenuIcon" class="fa-solid fa-bars text-base"></i>
+            </button>
         </div>
-    </header>
+    </div>
+
+    <!-- Mobile Dropdown Menu Panel (Hidden by default) -->
+    <div id="mobileDropdownMenu" class="hidden md:hidden glass-panel border-t border-cyan-400/20 px-4 py-4 space-y-2 shadow-2xl">
+        <button onclick="switchViewMobile('home')" class="w-full text-left px-3 py-2.5 rounded-xl text-sm font-medium text-slate-200 hover:text-cyan-300 hover:bg-cyan-500/15 transition-all flex items-center">
+            <i class="fa-solid fa-house mr-2.5 w-4 text-cyan-400"></i> Home
+        </button>
+        <button onclick="switchViewMobile('services')" class="w-full text-left px-3 py-2.5 rounded-xl text-sm font-medium text-slate-200 hover:text-cyan-300 hover:bg-cyan-500/15 transition-all flex items-center">
+            <i class="fa-solid fa-microscope mr-2.5 w-4 text-cyan-400"></i> Services
+        </button>
+        <button onclick="switchViewMobile('portfolio')" class="w-full text-left px-3 py-2.5 rounded-xl text-sm font-medium text-slate-200 hover:text-cyan-300 hover:bg-cyan-500/15 transition-all flex items-center">
+            <i class="fa-solid fa-flask-vial mr-2.5 w-4 text-cyan-400"></i> Projects
+        </button>
+        <button onclick="switchViewMobile('founder')" class="w-full text-left px-3 py-2.5 rounded-xl text-sm font-medium text-slate-200 hover:text-cyan-300 hover:bg-cyan-500/15 transition-all flex items-center">
+            <i class="fa-solid fa-user-tie mr-2.5 w-4 text-cyan-400"></i> Founder
+        </button>
+        <button onclick="switchViewMobile('testimonials')" class="w-full text-left px-3 py-2.5 rounded-xl text-sm font-medium text-slate-200 hover:text-cyan-300 hover:bg-cyan-500/15 transition-all flex items-center">
+            <i class="fa-solid fa-comments mr-2.5 w-4 text-cyan-400"></i> Reviews
+        </button>
+        <button onclick="switchViewMobile('contact')" class="w-full text-left px-3 py-2.5 rounded-xl text-sm font-medium text-slate-200 hover:text-cyan-300 hover:bg-cyan-500/15 transition-all flex items-center">
+            <i class="fa-solid fa-sliders mr-2.5 w-4 text-cyan-400"></i> Estimator
+        </button>
+    </div>
+</header>
 
     <main class="pt-6 pb-16 min-h-screen">
         
@@ -256,7 +278,7 @@
                                     <div class="w-3 h-3 rounded-full bg-amber-500"></div>
                                     <div class="w-3 h-3 rounded-full bg-emerald-500"></div>
                                 </div>
-                                <span class="text-xs font-mono text-cyan-300">academic_it_suite_active.env</span>
+                                <span class="text-xs font-mono text-cyan-300">MURAD UNITED STUDIO</span>
                             </div>
 
                             <div class="space-y-3.5">
@@ -400,7 +422,7 @@
                                 My commitment is to provide researchers and institutions with reliable, high-speed, and publication-ready technical frameworks.
                             </p>
 
-                            <div class="grid grid-cols-2 gap-3 pt-2 border-t border-slate-700/80 text-xs">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 border-t border-slate-700/80 text-xs">
                                 <div class="p-2.5 rounded-xl bg-slate-900/80 border border-slate-700">
                                     <div class="text-slate-400 font-mono text-[9px]">ADMIN WHATSAPP</div>
                                     <div class="text-cyan-300 font-bold font-mono mt-0.5 text-xs">+8801773350146</div>
@@ -710,7 +732,7 @@
                                 Having worked extensively with researchers, university faculty, and research institutions, I focus on building robust research portals, processing complex datasets using SPSS & R, establishing open journal platforms, and crafting high-performance web applications.
                             </p>
 
-                            <div class="grid grid-cols-2 gap-3 pt-3 border-t border-slate-700/80 text-xs">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-3 border-t border-slate-700/80 text-xs">
                                 <div class="p-3 rounded-xl bg-slate-900/80 border border-slate-700">
                                     <div class="text-slate-400 font-mono text-[10px]">WHATSAPP</div>
                                     <div class="text-cyan-300 font-bold font-mono mt-0.5">+8801773350146</div>
@@ -934,7 +956,7 @@
             </div>
 
             <div class="pt-8 border-t border-slate-800 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-300">
-                <p>&copy; 2026 Murad United Studio. Founder & Director: Monoarul Islam Murad .</p>
+                <p>&copy; 2026 Murad United Studio. Founder & Director: Monoarul Islam Murad.</p>
                 <div class="flex space-x-4 mt-3 sm:mt-0 font-mono text-[11px]">
                     <a href="mailto:muradunitedstudio@gmail.com" class="hover:text-cyan-300">muradunitedstudio@gmail.com</a>
                     <span>•</span>
@@ -944,24 +966,25 @@
         </div>
     </footer>
 
-    <div id="bookingModal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/80 backdrop-blur-md hidden">
-        <div class="glass-panel w-full max-w-lg p-6 sm:p-8 rounded-3xl relative border border-cyan-400/40 shadow-2xl">
+    <!-- MOBILE-FRIENDLY BOOKING MODAL -->
+    <div id="bookingModal" class="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-slate-950/80 backdrop-blur-md hidden">
+        <div class="glass-panel w-full max-w-lg max-h-[90vh] overflow-y-auto p-5 sm:p-8 rounded-3xl relative border border-cyan-400/40 shadow-2xl">
             
-            <button onclick="closeBookingModal()" class="absolute top-6 right-6 w-8 h-8 rounded-full bg-slate-900 border border-slate-700 flex items-center justify-center text-slate-300 hover:text-white transition-all">
+            <button onclick="closeBookingModal()" class="absolute top-5 right-5 w-8 h-8 rounded-full bg-slate-900 border border-slate-700 flex items-center justify-center text-slate-300 hover:text-white transition-all z-10">
                 <i class="fa-solid fa-xmark"></i>
             </button>
 
-            <div class="flex items-center space-x-3 mb-6">
-                <div class="w-11 h-11 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-2xl">
+            <div class="flex items-center space-x-3 mb-5 pr-8">
+                <div class="w-11 h-11 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-2xl shrink-0">
                     <i class="fa-brands fa-whatsapp"></i>
                 </div>
                 <div>
-                    <h3 class="text-xl font-bold text-white">Book Consultation </h3>
+                    <h3 class="text-lg sm:text-xl font-bold text-white">Book Consultation</h3>
                     <p class="text-xs text-slate-300">MURAD UNITED STUDIO by Monoarul I. Murad</p>
                 </div>
             </div>
 
-            <form onsubmit="handleDirectWhatsAppBooking(event)" class="space-y-4">
+            <form onsubmit="handleDirectWhatsAppBooking(event)" class="space-y-3.5">
                 <div>
                     <label class="block text-xs font-mono text-cyan-300 font-bold mb-1">YOUR FULL NAME</label>
                     <input type="text" id="bookName" required class="w-full px-4 py-2.5 rounded-xl bg-slate-900/90 border border-slate-700 text-white focus:outline-none focus:border-cyan-400 text-sm" placeholder="e.g. Dr. Tauhid / Researcher">
@@ -982,7 +1005,7 @@
                     </select>
                 </div>
 
-                <div class="grid grid-cols-2 gap-3">
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
                     <div>
                         <label class="block text-xs font-mono text-cyan-300 font-bold mb-1">PREFERRED DATE</label>
                         <input type="date" id="bookDate" required class="w-full px-3 py-2 rounded-xl bg-slate-900/90 border border-slate-700 text-white focus:outline-none focus:border-cyan-400 text-xs">
@@ -991,24 +1014,22 @@
                         <label class="block text-xs font-mono text-cyan-300 font-bold mb-1">PREFERRED TIME</label>
                         <input type="time" id="bookTime" required class="w-full px-3 py-2 rounded-xl bg-slate-900/90 border border-slate-700 text-white focus:outline-none focus:border-cyan-400 text-xs">
                     </div>
-					<div>
-    <label class="block text-xs font-mono text-cyan-300 font-bold mb-1">PREFERRED BID (৳)</label>
-    <div class="relative">
-        <!-- টাকা/কারেন্সি চিহ্নের পজিশনিং -->
-        <span class="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 text-xs font-bold">৳</span>
-        
-        <input 
-            type="money" 
-            id="bookMoney" 
-            name="bidAmount"
-            step="0.01" 
-            min="0" 
-            placeholder="0.00"
-            required 
-            class="w-full pl-7 pr-3 py-2 rounded-xl bg-slate-900/90 border border-slate-700 text-white focus:outline-none focus:border-cyan-400 text-xs"
-        >
-    </div>
-</div>
+                    <div>
+                        <label class="block text-xs font-mono text-cyan-300 font-bold mb-1">PREFERRED BID (৳)</label>
+                        <div class="relative">
+                            <span class="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 text-xs font-bold">৳</span>
+                            <input 
+                                type="number" 
+                                id="bookMoney" 
+                                name="bidAmount"
+                                step="0.01" 
+                                min="0" 
+                                placeholder="0.00"
+                                required 
+                                class="w-full pl-7 pr-3 py-2 rounded-xl bg-slate-900/90 border border-slate-700 text-white focus:outline-none focus:border-cyan-400 text-xs"
+                            >
+                        </div>
+                    </div>
                 </div>
 
                 <div>
@@ -1016,7 +1037,7 @@
                     <textarea id="bookDetails" rows="2" class="w-full px-4 py-2 rounded-xl bg-slate-900/90 border border-slate-700 text-white focus:outline-none focus:border-cyan-400 text-xs" placeholder="Briefly explain your topic or IT scope..."></textarea>
                 </div>
 
-                <button type="submit" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-600 text-white font-bold text-sm shadow-lg shadow-emerald-500/25 hover:brightness-110 transition-all flex items-center justify-center mt-2">
+                <button type="submit" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-600 text-white font-bold text-sm shadow-lg shadow-emerald-500/25 hover:brightness-110 transition-all flex items-center justify-center mt-3">
                     <i class="fa-brands fa-whatsapp text-lg mr-2"></i> Confirm your Booking
                 </button>
             </form>
@@ -1100,10 +1121,10 @@
             const service = document.getElementById('bookService').value;
             const date = document.getElementById('bookDate').value;
             const time = document.getElementById('bookTime').value;
-			const money = document.getElementById('bookMoney').value;
+            const money = document.getElementById('bookMoney').value;
             const details = document.getElementById('bookDetails').value || 'Not specified';
 
-            const whatsappMessage = `Hello Murad United Studio!\n\nI would like to book a consultation:\n\n• Name: ${name}\n• Email: ${email}\n• Service Needed: ${service}\n• Preferred Date: ${date}\n• Preferred Time: ${time}\n• Details: ${details}\n\nPlease confirm my appointment. Thank you!`;
+            const whatsappMessage = `Hello Murad United Studio!\n\nI would like to book a consultation:\n\n• Name: ${name}\n• Email: ${email}\n• Service Needed: ${service}\n• Preferred Date: ${date}\n• Preferred Time: ${time}\n• Preferred Bid: ৳${money}\n• Details: ${details}\n\nPlease confirm my appointment. Thank you!`;
 
             const encodedMessage = encodeURIComponent(whatsappMessage);
             const targetUrl = `https://wa.me/8801773350146?text=${encodedMessage}`;
@@ -1130,6 +1151,29 @@
         window.addEventListener('DOMContentLoaded', () => {
             switchView('home');
         });
+		function toggleMobileMenu() {
+    const menu = document.getElementById('mobileDropdownMenu');
+    const icon = document.getElementById('mobileMenuIcon');
+    
+    menu.classList.toggle('hidden');
+    if (menu.classList.contains('hidden')) {
+        icon.classList.remove('fa-xmark');
+        icon.classList.add('fa-bars');
+    } else {
+        icon.classList.remove('fa-bars');
+        icon.classList.add('fa-xmark');
+    }
+}
+
+function switchViewMobile(viewId) {
+    switchView(viewId);
+    // Automatically close the mobile dropdown after selecting an option
+    const menu = document.getElementById('mobileDropdownMenu');
+    const icon = document.getElementById('mobileMenuIcon');
+    menu.classList.add('hidden');
+    icon.classList.remove('fa-xmark');
+    icon.classList.add('fa-bars');
+}
     </script>
 </body>
 </html>
