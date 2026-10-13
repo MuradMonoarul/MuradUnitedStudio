@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <title>MURAD UNITED STUDIO - Projects</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                screens: { 'xs': '380px', 'sm': '640px', 'md': '768px', 'lg': '1024px', 'xl': '1280px', '2xl': '1536px' },
+                extend: {
+                    colors: {
+                        brand: { 50: '#eff6ff', 100: '#dbeafe', 200: '#bfdbfe', 300: '#93c5fd', 400: '#60a5fa', 500: '#3b82f6', 600: '#2563eb', 700: '#1d4ed8', 800: '#1e40af', 900: '#1e3a8a', bgDark: '#0e2347', bgSecondary: '#13315c', card: '#163866', glass: 'rgba(19, 49, 92, 0.85)' }
+                    },
+                    fontFamily: { sans: ['"Outfit"', '"Plus Jakarta Sans"', 'sans-serif'], mono: ['"Fira Code"', 'monospace'] }
+                }
+            }
+        }
+    </script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        * { -webkit-tap-highlight-color: transparent; }
+        body { font-family: 'Outfit', sans-serif; background-color: #0e2347; color: #f1f5f9; overflow-x: hidden; width: 100%; background-image: radial-gradient(circle at 50% 0%, #17386c 0%, #0e2347 70%); }
+        p, span.paragraph-text { color: #e2e8f0 !important; }
+        .text-subtle { color: #bfdbfe !important; }
+        .glow-blob-1 { position: absolute; top: -5%; left: 5%; width: min(550px, 90vw); height: min(550px, 90vw); background: radial-gradient(circle, rgba(56, 189, 248, 0.35) 0%, rgba(37, 99, 235, 0.2) 60%, transparent 100%); filter: blur(80px); z-index: -1; pointer-events: none; animation: floatBlob 12s ease-in-out infinite alternate; }
+        .glow-blob-2 { position: absolute; top: 35%; right: -5%; width: min(650px, 90vw); height: min(650px, 90vw); background: radial-gradient(circle, rgba(14, 165, 233, 0.3) 0%, rgba(30, 58, 138, 0.25) 70%, transparent 100%); filter: blur(90px); z-index: -1; pointer-events: none; animation: floatBlob 16s ease-in-out infinite alternate-reverse; }
+        .glow-blob-3 { position: absolute; bottom: 5%; left: 15%; width: min(600px, 90vw); height: min(600px, 90vw); background: radial-gradient(circle, rgba(96, 165, 250, 0.25) 0%, rgba(19, 49, 92, 0.15) 70%, transparent 100%); filter: blur(90px); z-index: -1; pointer-events: none; }
+        @keyframes floatBlob { 0% { transform: translate(0, 0) scale(1); } 50% { transform: translate(25px, -25px) scale(1.05); } 100% { transform: translate(-20px, 20px) scale(0.95); } }
+        .glass-panel { background: rgba(19, 49, 92, 0.85); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(147, 197, 253, 0.3); box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35); }
+        .glass-panel:hover { border-color: rgba(56, 189, 248, 0.6); }
+        .text-gradient { background: linear-gradient(135deg, #7dd3fc 0%, #38bdf8 50%, #60a5fa 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #0e2347; }
+        ::-webkit-scrollbar-thumb { background: #2563eb; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #38bdf8; }
+        input, select, textarea, button { touch-action: manipulation; }
+    </style>
+</head>
+<body class="relative selection:bg-cyan-500 selection:text-white">
+
+    <div class="glow-blob-1"></div>
+    <div class="glow-blob-2"></div>
+    <div class="glow-blob-3"></div>
+
+    <header class="w-full z-50 glass-panel border-b border-sky-400/30 transition-all duration-300 sticky top-0" id="navbar">
+        <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 py-2.5 sm:h-20 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-2 sm:gap-3 group py-1 text-left focus:outline-none">
+                <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-gradient-to-tr from-blue-600 via-sky-500 to-cyan-400 flex items-center justify-center p-0.5 shadow-lg shadow-blue-500/30 group-hover:scale-105 transition-transform shrink-0">
+                    <div class="w-full h-full bg-slate-950 rounded-[10px] flex items-center justify-center">
+                        <i class="fa-solid font-bold fa-atom text-cyan-400 text-base sm:text-xl group-hover:rotate-180 transition-transform duration-700"></i>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-center leading-none select-none">
+                    <span class="font-display font-black text-xs sm:text-sm tracking-widest text-slate-100 uppercase group-hover:text-cyan-400 transition-colors">MURAD</span>
+                    <span class="font-display font-black text-xs sm:text-sm tracking-widest text-cyan-400 uppercase">UNITED</span>
+                    <span class="font-display font-black text-[9px] sm:text-xs tracking-widest text-slate-300 uppercase">STUDIO</span>
+                </div>
+            </a>
+
+            <nav class="hidden lg:flex items-center gap-1.5 xl:gap-2">
+                <a href="index.html" class="px-3 py-2 rounded-lg text-xs xl:text-sm font-medium text-slate-200 hover:text-cyan-300 hover:bg-cyan-500/15 transition-all"><i class="fa-solid fa-house mr-1 text-xs"></i> Home</a>
+                <a href="services.html" class="px-3 py-2 rounded-lg text-xs xl:text-sm font-medium text-slate-200 hover:text-cyan-300 hover:bg-cyan-500/15 transition-all"><i class="fa-solid fa-microscope mr-1 text-xs"></i> Services</a>
+                <a href="booking.html" class="px-3 py-2 rounded-lg text-xs xl:text-sm font-medium text-slate-200 hover:text-cyan-300 hover:bg-cyan-500/15 transition-all"><i class="fa-solid fa-calendar-check mr-1 text-xs"></i> Booking</a>
+                <a href="projects.html" class="px-3 py-2 rounded-lg text-xs xl:text-sm font-medium text-cyan-300 bg-cyan-500/25 border border-cyan-500/50 transition-all"><i class="fa-solid fa-flask-vial mr-1 text-xs"></i> Projects</a>
+                <a href="founder.html" class="px-3 py-2 rounded-lg text-xs xl:text-sm font-medium text-slate-200 hover:text-cyan-300 hover:bg-cyan-500/15 transition-all"><i class="fa-solid fa-user-tie mr-1 text-xs"></i> Founder</a>
+                <a href="reviews.html" class="px-3 py-2 rounded-lg text-xs xl:text-sm font-medium text-slate-200 hover:text-cyan-300 hover:bg-cyan-500/15 transition-all"><i class="fa-solid fa-comments mr-1 text-xs"></i> Reviews</a>
+                <a href="shop.html" class="px-3 py-2 rounded-lg text-xs xl:text-sm font-medium text-slate-200 hover:text-cyan-300 hover:bg-cyan-500/15 transition-all"><i class="fa-solid fa-cart-shopping"></i> Shop</a>
+            </nav>
+
+            <div class="flex items-center gap-2">
+                <a href="booking.html" class="hidden sm:flex px-3.5 py-2 sm:px-4 sm:py-2.5 rounded-xl bg-gradient-to-r from-cyan-500 via-sky-500 to-blue-600 text-white font-semibold text-xs sm:text-sm shadow-lg shadow-cyan-500/30 hover:scale-105 active:scale-95 transition-all items-center shrink-0">
+                    <i class="fa-solid fa-calendar-check text-xs sm:text-sm mr-1.5"></i> <span>Book Service</span>
+                </a>
+                <button onclick="toggleMobileMenu()" class="lg:hidden w-10 h-10 rounded-xl glass-panel border border-cyan-400/40 flex items-center justify-center text-cyan-300 hover:text-white transition-all focus:outline-none cursor-pointer" aria-label="Toggle Menu">
+                    <i id="mobileMenuIcon" class="fa-solid fa-bars text-lg"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobileDropdownMenu" class="hidden lg:hidden glass-panel border-t border-cyan-400/30 px-4 py-4 space-y-1.5 shadow-2xl max-h-[80vh] overflow-y-auto">
+            <a href="index.html" class="w-full text-left px-3.5 py-3 rounded-xl text-sm font-medium text-slate-200 hover:text-cyan-300 hover:bg-cyan-500/15 flex items-center"><i class="fa-solid fa-house mr-3 w-5 text-center text-cyan-400"></i> Home</a>
+            <a href="services.html" class="w-full text-left px-3.5 py-3 rounded-xl text-sm font-medium text-slate-200 hover:text-cyan-300 hover:bg-cyan-500/15 flex items-center"><i class="fa-solid fa-microscope mr-3 w-5 text-center text-cyan-400"></i> Services</a>
+            <a href="booking.html" class="w-full text-left px-3.5 py-3 rounded-xl text-sm font-semibold text-slate-200 hover:text-cyan-300 hover:bg-cyan-500/15 flex items-center"><i class="fa-solid fa-calendar-check mr-3 w-5 text-center text-cyan-400"></i> Booking</a>
+            <a href="projects.html" class="w-full text-left px-3.5 py-3 rounded-xl text-sm font-medium text-cyan-300 bg-cyan-500/25 border border-cyan-400/30 flex items-center"><i class="fa-solid fa-flask-vial mr-3 w-5 text-center text-cyan-400"></i> Projects</a>
+            <a href="founder.html" class="w-full text-left px-3.5 py-3 rounded-xl text-sm font-medium text-slate-200 hover:text-cyan-300 hover:bg-cyan-500/15 flex items-center"><i class="fa-solid fa-user-tie mr-3 w-5 text-center text-cyan-400"></i> Founder</a>
+            <a href="reviews.html" class="w-full text-left px-3.5 py-3 rounded-xl text-sm font-medium text-slate-200 hover:text-cyan-300 hover:bg-cyan-500/15 flex items-center"><i class="fa-solid fa-comments mr-3 w-5 text-center text-cyan-400"></i> Reviews</a>
+            <a href="shop.html" class="w-full text-left px-3.5 py-3 rounded-xl text-sm font-medium text-slate-200 hover:text-cyan-300 hover:bg-cyan-500/15 flex items-center"><i class="fa-solid fa-cart-shopping mr-3 w-5 text-center text-cyan-400"></i> Shop</a>
+        </div>
+    </header>
+
+    <main class="pt-4 sm:pt-6 pb-16 min-h-screen">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-8 sm:mb-12">
+                <div class="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full glass-panel border border-cyan-400/40 text-cyan-300 text-xs font-semibold mb-3">
+                    <i class="fa-solid fa-globe"></i>
+                    <span>Proven Portfolio Showcase</span>
+                </div>
+                <h2 class="text-2xl sm:text-5xl font-extrabold tracking-tight text-white">Featured Live Projects & Platforms</h2>
+                <p class="text-slate-200 text-xs sm:text-base mt-2">Explore live platforms, research portals, and interactive tools engineered by Murad United Studio.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+                <div class="glass-panel rounded-2xl overflow-hidden group flex flex-col justify-between sm:col-span-2 lg:col-span-2">
+                    <div>
+                        <div class="h-44 sm:h-48 bg-gradient-to-br from-slate-900 to-cyan-950 p-5 flex flex-col justify-between relative overflow-hidden">
+                            <div class="relative z-10 flex justify-between items-start">
+                                <span class="px-3 py-1 rounded-full bg-cyan-500/30 text-cyan-200 text-xs font-mono font-bold border border-cyan-400/40">Academic Research</span>
+                                <a href="https://muradmonoarul.github.io/khanresearchacademy/" target="_blank" class="w-8 h-8 rounded-full glass-panel flex items-center justify-center text-cyan-300 hover:bg-cyan-500 hover:text-white transition-all"><i class="fa-solid fa-arrow-up-right-from-square text-xs"></i></a>
+                            </div>
+                            <div class="relative z-10">
+                                <h4 class="text-lg sm:text-xl font-bold text-white">Dr. Khan Research Academy</h4>
+                            </div>
+                        </div>
+                        <div class="p-5 sm:p-6 space-y-3">
+                            <p class="text-slate-200 text-xs sm:text-sm leading-relaxed">
+                                Premier research academy platform providing research education, manuscript formatting, and scholarly resources.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="p-5 sm:p-6 pt-0">
+                        <a href="https://muradmonoarul.github.io/khanresearchacademy/" target="_blank" class="w-full py-2.5 rounded-xl bg-cyan-500/25 border border-cyan-400/40 text-cyan-200 font-bold text-xs hover:bg-cyan-500 hover:text-white transition-all flex items-center justify-center">
+                            Launch Live Platform <i class="fa-solid fa-external-link ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="glass-panel rounded-2xl overflow-hidden group flex flex-col justify-between">
+                    <div>
+                        <div class="h-44 sm:h-48 bg-gradient-to-br from-slate-900 to-blue-950 p-5 flex flex-col justify-between relative overflow-hidden">
+                            <div class="relative z-10 flex justify-between items-start">
+                                <span class="px-3 py-1 rounded-full bg-blue-500/30 text-blue-200 text-xs font-mono font-bold border border-blue-400/40">Academic Publishing</span>
+                                <a href="https://www.murad-journal.vercel.app" target="_blank" class="w-8 h-8 rounded-full glass-panel flex items-center justify-center text-cyan-300 hover:bg-cyan-500 hover:text-white transition-all"><i class="fa-solid fa-arrow-up-right-from-square text-xs"></i></a>
+                            </div>
+                            <div class="relative z-10">
+                                <h4 class="text-lg sm:text-xl font-bold text-white">Murad Journal System</h4>
+                            </div>
+                        </div>
+                        <div class="p-5 sm:p-6 space-y-3">
+                            <p class="text-slate-200 text-xs sm:text-sm leading-relaxed">
+                                Academic journal portal engineered for scholarly article archives, research publishing, paper submissions, and indexing.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="p-5 sm:p-6 pt-0">
+                        <a href="https://www.murad-journal.vercel.app" target="_blank" class="w-full py-2.5 rounded-xl bg-blue-500/25 border border-blue-400/40 text-blue-200 font-bold text-xs hover:bg-blue-500 hover:text-white transition-all flex items-center justify-center">
+                            Launch Live Journal <i class="fa-solid fa-external-link ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="glass-panel rounded-2xl overflow-hidden group flex flex-col justify-between">
+                    <div>
+                        <div class="h-44 sm:h-48 bg-gradient-to-br from-slate-900 to-sky-950 p-5 flex flex-col justify-between relative overflow-hidden">
+                            <div class="relative z-10 flex justify-between items-start">
+                                <span class="px-3 py-1 rounded-full bg-sky-500/30 text-sky-200 text-xs font-mono font-bold border border-sky-400/40">Web Utility Tool</span>
+                                <a href="https://muradmonoarul.github.io/DriveLinkConverter/" target="_blank" class="w-8 h-8 rounded-full glass-panel flex items-center justify-center text-cyan-300 hover:bg-cyan-500 hover:text-white transition-all"><i class="fa-solid fa-arrow-up-right-from-square text-xs"></i></a>
+                            </div>
+                            <div class="relative z-10">
+                                <h4 class="text-lg sm:text-xl font-bold text-white">Google Drive Link Converter</h4>
+                            </div>
+                        </div>
+                        <div class="p-5 sm:p-6 space-y-3">
+                            <p class="text-slate-200 text-xs sm:text-sm leading-relaxed">
+                                Highly efficient web tool for researchers to convert cloud storage audio/file links into direct download & streaming URLs.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="p-5 sm:p-6 pt-0">
+                        <a href="https://muradmonoarul.github.io/DriveLinkConverter/" target="_blank" class="w-full py-2.5 rounded-xl bg-sky-500/25 border border-sky-400/40 text-sky-200 font-bold text-xs hover:bg-sky-500 hover:text-white transition-all flex items-center justify-center">
+                            Launch Live Tool <i class="fa-solid fa-external-link ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="glass-panel rounded-2xl overflow-hidden group flex flex-col justify-between">
+                    <div>
+                        <div class="h-48 bg-gradient-to-br from-slate-900 to-teal-950 p-6 flex flex-col justify-between relative overflow-hidden">
+                            <div class="relative z-10 flex justify-between items-start">
+                                <span class="px-3 py-1 rounded-full bg-teal-500/30 text-teal-200 text-xs font-mono font-bold border border-teal-400/40">Interactive Web App</span>
+                                <a href="https://muradmonoarul.github.io/DrinkWater/" target="_blank" class="w-9 h-9 rounded-full glass-panel flex items-center justify-center text-cyan-300 hover:bg-cyan-500 hover:text-white transition-all"><i class="fa-solid fa-arrow-up-right-from-square text-xs"></i></a>
+                            </div>
+                            <div class="relative z-10">
+                                <h4 class="text-xl font-bold text-white">DrinkWater Tracker App</h4>
+                            </div>
+                        </div>
+                        <div class="p-6 space-y-4">
+                            <p class="text-slate-200 text-sm leading-relaxed">
+                                Interactive health and hydration habit tracking web application featuring animated metrics and progress state management.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <a href="https://muradmonoarul.github.io/DrinkWater/" target="_blank" class="w-full py-2.5 rounded-xl bg-teal-500/25 border border-teal-400/40 text-teal-200 font-bold text-xs hover:bg-teal-500 hover:text-white transition-all flex items-center justify-center">
+                            Launch Live App <i class="fa-solid fa-external-link ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="border-t border-slate-800 glass-panel py-10 mt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mb-8">
+                <div class="space-y-3 sm:col-span-2">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-cyan-500 to-blue-600 p-0.5">
+                            <div class="w-full h-full bg-slate-950 rounded-[10px] flex items-center justify-center"><i class="fa-solid fa-graduation-cap text-cyan-400 text-xs"></i></div>
+                        </div>
+                        <span class="text-base sm:text-lg font-extrabold text-white tracking-tight">MURAD UNITED STUDIO</span>
+                    </div>
+                    <p class="text-slate-200 text-xs sm:text-sm max-w-md leading-relaxed">
+                        Online agency empowering researchers, universities, and businesses with qualitative interview manuscript transcriptions, SPSS/R data analysis, research IT platforms, and web engineering.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold text-xs uppercase tracking-wider mb-3 font-mono">Quick Navigation</h4>
+                    <ul class="space-y-2 text-xs sm:text-sm text-slate-200">
+                        <li><a href="index.html" class="hover:text-cyan-300 transition-colors">Home Page</a></li>
+                        <li><a href="services.html" class="hover:text-cyan-300 transition-colors">Research & IT Services</a></li>
+                        <li><a href="booking.html" class="hover:text-cyan-300 transition-colors">Book Consultation</a></li>
+                        <li><a href="projects.html" class="hover:text-cyan-300 transition-colors">Featured Works</a></li>
+                        <li><a href="founder.html" class="hover:text-cyan-300 transition-colors">Founder Bio</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold text-xs uppercase tracking-wider mb-3 font-mono">Core Solutions</h4>
+                    <ul class="space-y-2 text-xs sm:text-sm text-slate-200">
+                        <li><a href="services.html" class="hover:text-cyan-300 transition-colors">Interview Transcribing</a></li>
+                        <li><a href="services.html" class="hover:text-cyan-300 transition-colors">Academic Paper Support</a></li>
+                        <li><a href="services.html" class="hover:text-cyan-300 transition-colors">SPSS & R Data Analysis</a></li>
+                        <li><a href="services.html" class="hover:text-cyan-300 transition-colors">Web Application Dev</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="pt-6 border-t border-slate-800 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-300 text-center sm:text-left gap-2">
+                <p>&copy; 2026 Murad United Studio. Founder & Director: Monoarul Islam Murad.</p>
+                <div class="flex flex-wrap justify-center space-x-3 font-mono text-[11px]">
+                    <a href="mailto:muradunitedstudio@gmail.com" class="hover:text-cyan-300">muradunitedstudio@gmail.com</a>
+                    <span>•</span>
+                    <a href="https://wa.me/8801773350146" target="_blank" class="hover:text-cyan-300">+8801773350146</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ once: true, duration: 700, offset: 30 });
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileDropdownMenu');
+            const icon = document.getElementById('mobileMenuIcon');
+            menu.classList.toggle('hidden');
+            if (menu.classList.contains('hidden')) {
+                icon.classList.remove('fa-xmark'); icon.classList.add('fa-bars');
+            } else {
+                icon.classList.remove('fa-bars'); icon.classList.add('fa-xmark');
+            }
+        }
+    </script>
+</body>
+</html>
