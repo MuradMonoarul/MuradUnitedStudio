@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MURAD UNITED STUDIO | Research Support, Data Analysis & Web Engineering Agency</title>
+    <title>MURAD UNITED STUDIO </title>
     
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -146,18 +146,25 @@
         <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 py-3 sm:h-20 flex flex-col md:flex-row items-center justify-between gap-3">
             
             <!-- Logo & Studio Branding (3 Line Name) -->
-            <a href="#home" onclick="switchView('home')" class="flex items-center space-x-3 group">
-                <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-gradient-to-tr from-cyan-500 to-blue-600 p-0.5 shadow-lg shadow-cyan-500/30 group-hover:scale-105 transition-transform duration-300 shrink-0">
-                    <div class="w-full h-full bg-slate-950 rounded-[10px] flex items-center justify-center">
-                        <i class="fa-solid fa-graduation-cap text-cyan-400 text-base sm:text-lg"></i>
+            <!-- 3-LINE BRAND LOGO HEADER -->
+                <a href="#home" class="flex items-center gap-3 group self-start md:self-auto py-1">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cobalt-600 via-neon-blue to-neon-cyan flex items-center justify-center p-0.5 shadow-lg shadow-cobalt-500/30 group-hover:scale-105 transition-transform shrink-0">
+                        <div class="w-full h-full bg-slate-950 rounded-[10px] flex items-center justify-center">
+                            <i class="fa-solid font-bold fa-atom text-neon-blue text-xl group-hover:rotate-180 transition-transform duration-700"></i>
+                        </div>
                     </div>
-                </div>
-                <div class="leading-tight">
-                    <span class="text-sm sm:text-base font-extrabold tracking-tight text-white block">MURAD</span>
-                    <span class="text-sm sm:text-base font-extrabold tracking-tight text-white block">UNITED</span>
-                    <span class="text-sm sm:text-base font-extrabold tracking-tight text-white block">STUDIO</span>
-                </div>
-            </a>
+                    
+                    <!-- EXPLICIT 3-LINE LOGO TEXT -->
+                    <div class="flex flex-col justify-center leading-none select-none">
+                        <span class="font-display font-black text-xs md:text-sm tracking-widest text-slate-100 uppercase group-hover:text-neon-blue transition-colors">MURAD</span>
+                        <span class="font-display font-black text-xs md:text-sm tracking-widest text-neon-blue uppercase text-glow">UNITED</span>
+                        <span class="font-display font-black text-[10px] md:text-xs tracking-widest text-slate-300 uppercase">STUDIO</span>
+                    </div>
+
+                    <span class="ml-1 px-2 py-0.5 text-[9px] font-bold tracking-wider uppercase bg-cobalt-500/20 text-neon-blue border border-neon-blue/30 rounded-full hidden xs:inline-block">
+                        PRO
+                    </span>
+                </a>
 
             <!-- Static Navigation Links (Responsive Flex Wrap) -->
             <nav class="flex flex-wrap items-center justify-center gap-1 sm:gap-2">
@@ -168,7 +175,7 @@
                     <i class="fa-solid fa-microscope mr-1 text-xs"></i> Services
                 </button>
                 <button onclick="switchView('portfolio')" class="nav-btn px-2.5 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-medium text-slate-200 hover:text-cyan-300 hover:bg-cyan-500/15 transition-all" data-target="portfolio">
-                    <i class="fa-solid fa-flask-vial mr-1 text-xs"></i> Works
+                    <i class="fa-solid fa-flask-vial mr-1 text-xs"></i> Projects
                 </button>
                 <button onclick="switchView('founder')" class="nav-btn px-2.5 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-medium text-slate-200 hover:text-cyan-300 hover:bg-cyan-500/15 transition-all" data-target="founder">
                     <i class="fa-solid fa-user-tie mr-1 text-xs"></i> Founder
@@ -204,7 +211,7 @@
                     </div>
                     
                     <h1 class="text-3xl sm:text-6xl font-extrabold tracking-tight leading-tight text-white">
-                        Empowering Academics & Agencies at <span class="text-gradient">Murad United Studio</span>
+                        Empowering Academics & Agencies at <span class="text-gradient"><br>Murad United Studio</span>
                     </h1>
                     
                     <p class="text-slate-200 text-sm sm:text-lg leading-relaxed max-w-2xl">
@@ -232,7 +239,7 @@
                             <div class="text-xs sm:text-sm text-subtle font-medium mt-1">Data Datasets Analyzed</div>
                         </div>
                         <div>
-                            <div class="text-xl sm:text-3xl font-extrabold text-white font-mono">100%</div>
+                            <div class="text-xl sm:text-3xl font-extrabold text-white font-mono">99%</div>
                             <div class="text-xs sm:text-sm text-subtle font-medium mt-1">Academic & IT Accuracy</div>
                         </div>
                     </div>
@@ -278,7 +285,7 @@
                                         <i class="fa-solid fa-server"></i>
                                     </div>
                                     <div>
-                                        <h4 class="font-bold text-white text-sm">Research Institute IT Support</h4>
+                                        <h4 class="font-bold text-white text-sm">Institute IT Support</h4>
                                         <p class="text-xs text-slate-300 mt-0.5">Cloud portals, secure journal systems, databases & laboratory IT.</p>
                                     </div>
                                 </div>
@@ -295,7 +302,7 @@
                             </div>
 
                             <button onclick="openBookingModal()" class="w-full py-3 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-600 text-white font-bold text-sm hover:brightness-110 transition-all flex items-center justify-center shadow-md">
-                                <i class="fa-brands fa-whatsapp text-lg mr-2"></i> WhatsApp Instant Direct Booking
+                                <i class="fa-brands fa-whatsapp text-lg mr-2"></i> Instant Direct Booking
                             </button>
                         </div>
                     </div>
@@ -361,7 +368,7 @@
                 <div class="text-center max-w-3xl mx-auto mb-10">
                     <div class="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full glass-panel border border-cyan-400/30 text-cyan-300 text-xs font-semibold mb-3">
                         <i class="fa-solid fa-user-shield"></i>
-                        <span>Leadership & Studio Administration</span>
+                        <span> Studio Administration</span>
                     </div>
                     <h2 class="text-2xl sm:text-4xl font-extrabold tracking-tight text-white">ADMIN Profile</h2>
                     <p class="text-slate-200 text-sm sm:text-base mt-2">Meet the expert driving technical precision and academic innovation.</p>
@@ -400,7 +407,7 @@
                                 </div>
                                 <div class="p-2.5 rounded-xl bg-slate-900/80 border border-slate-700">
                                     <div class="text-slate-400 font-mono text-[9px]">OFFICIAL EMAIL</div>
-                                    <div class="text-cyan-300 font-bold font-mono mt-0.5 text-xs truncate">muradunitedstudio@gmail.com</div>
+                                    <div class="text-cyan-300 font-bold font-mono mt-0.5 text-xs truncate">muradmonoarul@gmail.com</div>
                                 </div>
                             </div>
                         </div>
@@ -432,19 +439,19 @@
                             </div>
                             <span class="px-3 py-1 rounded-full bg-cyan-500/20 text-cyan-300 text-xs font-mono border border-cyan-500/30">Priority Focus</span>
                         </div>
-                        <h3 class="text-xl sm:text-2xl font-bold text-white mb-3">Research & Academic Support</h3>
+                        <h3 class="text-xl sm:text-2xl font-bold text-white mb-3">Academic Support</h3>
                         <p class="text-slate-200 text-xs sm:text-sm leading-relaxed mb-6">
                             Complete technical, editorial, and layout support for individual researchers, university faculty, and academic bodies.
                         </p>
                         <ul class="space-y-2.5 mb-8 text-xs sm:text-sm text-slate-200">
                             <li class="flex items-center"><i class="fa-solid fa-circle-check text-cyan-400 mr-2"></i> Academic Paper Formatting (APA, IEEE, Harvard)</li>
-                            <li class="flex items-center"><i class="fa-solid fa-circle-check text-cyan-400 mr-2"></i> Academic Journal Portal Development & Setup</li>
+                            <li class="flex items-center"><i class="fa-solid fa-circle-check text-cyan-400 mr-2"></i> Academic Portal Development & Setup</li>
                             <li class="flex items-center"><i class="fa-solid fa-circle-check text-cyan-400 mr-2"></i> Graphical Abstract Design & Scientific Diagrams</li>
                             <li class="flex items-center"><i class="fa-solid fa-circle-check text-cyan-400 mr-2"></i> Survey Tool Design & Online Questionnaire Setup</li>
                         </ul>
                     </div>
                     <button onclick="openBookingModal('Research & Academic Support')" class="w-full py-3 rounded-xl bg-slate-900/90 border border-cyan-400/30 text-cyan-300 font-bold text-xs sm:text-sm hover:bg-cyan-500 hover:text-white transition-all flex items-center justify-center">
-                        <i class="fa-brands fa-whatsapp mr-2 text-base"></i> Book Support via WhatsApp
+                        <i class="fa-brands fa-whatsapp mr-2 text-base"></i> Book Support
                     </button>
                 </div>
 
@@ -469,7 +476,7 @@
                         </ul>
                     </div>
                     <button onclick="openBookingModal('Data Analysis')" class="w-full py-3 rounded-xl bg-slate-900/90 border border-cyan-400/30 text-cyan-300 font-bold text-xs sm:text-sm hover:bg-cyan-500 hover:text-white transition-all flex items-center justify-center">
-                        <i class="fa-brands fa-whatsapp mr-2 text-base"></i> Book Analysis via WhatsApp
+                        <i class="fa-brands fa-whatsapp mr-2 text-base"></i> Book Analysis 
                     </button>
                 </div>
 
@@ -494,7 +501,7 @@
                         </ul>
                     </div>
                     <button onclick="openBookingModal('Institute IT Support')" class="w-full py-3 rounded-xl bg-slate-900/90 border border-cyan-400/30 text-cyan-300 font-bold text-xs sm:text-sm hover:bg-cyan-500 hover:text-white transition-all flex items-center justify-center">
-                        <i class="fa-brands fa-whatsapp mr-2 text-base"></i> Book IT Support via WhatsApp
+                        <i class="fa-brands fa-whatsapp mr-2 text-base"></i> Book IT Support
                     </button>
                 </div>
 
@@ -519,7 +526,7 @@
                         </ul>
                     </div>
                     <button onclick="openBookingModal('Web Development')" class="w-full py-3 rounded-xl bg-slate-900/90 border border-cyan-400/30 text-cyan-300 font-bold text-xs sm:text-sm hover:bg-cyan-500 hover:text-white transition-all flex items-center justify-center">
-                        <i class="fa-brands fa-whatsapp mr-2 text-base"></i> Book Web Dev via WhatsApp
+                        <i class="fa-brands fa-whatsapp mr-2 text-base"></i> Book Web Dev 
                     </button>
                 </div>
 
@@ -547,7 +554,7 @@
                                 <a href="https://muradmonoarul.github.io/khanresearchacademy/" target="_blank" class="w-9 h-9 rounded-full glass-panel flex items-center justify-center text-cyan-300 hover:bg-cyan-500 hover:text-white transition-all"><i class="fa-solid fa-arrow-up-right-from-square text-xs"></i></a>
                             </div>
                             <div class="relative z-10">
-                                <h4 class="text-xl font-bold text-white">Khan Research Academy</h4>
+                                <h4 class="text-xl font-bold text-white">Dr. Khan Research Academy</h4>
                             </div>
                         </div>
                         <div class="p-6 space-y-4">
@@ -671,7 +678,7 @@
                         <span>Studio Founder & Leadership</span>
                     </div>
                     <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-white">Monoarul Islam Murad</h2>
-                    <p class="text-slate-200 text-base mt-2">Sociologist, Academic IT Strategist & Founder of Murad United Studio.</p>
+                    <p class="text-slate-200 text-base mt-2"> Founder & CEO of Murad United Studio.</p>
                 </div>
 
                 <div class="glass-panel p-8 sm:p-12 rounded-3xl relative overflow-hidden border border-cyan-400/30">
@@ -682,7 +689,7 @@
                                 <img src="https://iili.io/nW7kvjI.jpg" alt="Monoarul Islam Murad" class="w-full h-full object-cover rounded-2xl bg-slate-900" onerror="this.src='https://placehold.co/400x400/0b192e/38bdf8?text=Monoarul+Islam+Murad'">
                             </div>
                             <h3 class="text-2xl font-bold text-white">Monoarul Islam Murad</h3>
-                            <p class="text-cyan-300 font-mono text-xs font-bold mt-1 uppercase tracking-wider">Founder & Lead Director</p>
+                            <p class="text-cyan-300 font-mono text-xs font-bold mt-1 uppercase tracking-wider">Founder & Lead Administrator</p>
                             <a href="http://www.murad.ami.bd" target="_blank" class="text-xs text-sky-300 hover:underline mt-1 font-mono">www.murad.ami.bd</a>
 
                             <div class="flex flex-wrap justify-center gap-2 mt-6">
@@ -705,12 +712,12 @@
 
                             <div class="grid grid-cols-2 gap-3 pt-3 border-t border-slate-700/80 text-xs">
                                 <div class="p-3 rounded-xl bg-slate-900/80 border border-slate-700">
-                                    <div class="text-slate-400 font-mono text-[10px]">DIRECT WHATSAPP</div>
+                                    <div class="text-slate-400 font-mono text-[10px]">WHATSAPP</div>
                                     <div class="text-cyan-300 font-bold font-mono mt-0.5">+8801773350146</div>
                                 </div>
                                 <div class="p-3 rounded-xl bg-slate-900/80 border border-slate-700">
-                                    <div class="text-slate-400 font-mono text-[10px]">EMAIL ADDRESS</div>
-                                    <div class="text-cyan-300 font-bold font-mono mt-0.5 truncate">muradunitedstudio@gmail.com</div>
+                                    <div class="text-slate-400 font-mono text-[10px]">EMAIL </div>
+                                    <div class="text-cyan-300 font-bold font-mono mt-0.5 truncate">muradmonoarul@gmail.com</div>
                                 </div>
                             </div>
                         </div>
@@ -844,7 +851,7 @@
                         </div>
                         
                         <button onclick="sendEstimatedWhatsApp()" class="px-6 py-3.5 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-600 text-white font-bold text-sm shadow-lg shadow-emerald-500/20 hover:scale-105 transition-all shrink-0 flex items-center">
-                            <i class="fa-brands fa-whatsapp text-lg mr-2"></i> Send Estimate to WhatsApp
+                            <i class="fa-brands fa-whatsapp text-lg mr-2"></i> Send Estimate 
                         </button>
                     </div>
 
@@ -927,7 +934,7 @@
             </div>
 
             <div class="pt-8 border-t border-slate-800 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-300">
-                <p>&copy; 2026 Murad United Studio. Founder & Director: Monoarul Islam Murad (ADMIN).</p>
+                <p>&copy; 2026 Murad United Studio. Founder & Director: Monoarul Islam Murad .</p>
                 <div class="flex space-x-4 mt-3 sm:mt-0 font-mono text-[11px]">
                     <a href="mailto:muradunitedstudio@gmail.com" class="hover:text-cyan-300">muradunitedstudio@gmail.com</a>
                     <span>•</span>
@@ -949,8 +956,8 @@
                     <i class="fa-brands fa-whatsapp"></i>
                 </div>
                 <div>
-                    <h3 class="text-xl font-bold text-white">Book Consultation via WhatsApp</h3>
-                    <p class="text-xs text-slate-300">Directly formats & sends your request to +8801773350146</p>
+                    <h3 class="text-xl font-bold text-white">Book Consultation </h3>
+                    <p class="text-xs text-slate-300">MURAD UNITED STUDIO by Monoarul I. Murad</p>
                 </div>
             </div>
 
@@ -984,6 +991,24 @@
                         <label class="block text-xs font-mono text-cyan-300 font-bold mb-1">PREFERRED TIME</label>
                         <input type="time" id="bookTime" required class="w-full px-3 py-2 rounded-xl bg-slate-900/90 border border-slate-700 text-white focus:outline-none focus:border-cyan-400 text-xs">
                     </div>
+					<div>
+    <label class="block text-xs font-mono text-cyan-300 font-bold mb-1">PREFERRED BID (৳)</label>
+    <div class="relative">
+        <!-- টাকা/কারেন্সি চিহ্নের পজিশনিং -->
+        <span class="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 text-xs font-bold">৳</span>
+        
+        <input 
+            type="money" 
+            id="bookMoney" 
+            name="bidAmount"
+            step="0.01" 
+            min="0" 
+            placeholder="0.00"
+            required 
+            class="w-full pl-7 pr-3 py-2 rounded-xl bg-slate-900/90 border border-slate-700 text-white focus:outline-none focus:border-cyan-400 text-xs"
+        >
+    </div>
+</div>
                 </div>
 
                 <div>
@@ -992,7 +1017,7 @@
                 </div>
 
                 <button type="submit" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-600 text-white font-bold text-sm shadow-lg shadow-emerald-500/25 hover:brightness-110 transition-all flex items-center justify-center mt-2">
-                    <i class="fa-brands fa-whatsapp text-lg mr-2"></i> Confirm & Launch WhatsApp Chat
+                    <i class="fa-brands fa-whatsapp text-lg mr-2"></i> Confirm your Booking
                 </button>
             </form>
         </div>
@@ -1075,6 +1100,7 @@
             const service = document.getElementById('bookService').value;
             const date = document.getElementById('bookDate').value;
             const time = document.getElementById('bookTime').value;
+			const money = document.getElementById('bookMoney').value;
             const details = document.getElementById('bookDetails').value || 'Not specified';
 
             const whatsappMessage = `Hello Murad United Studio!\n\nI would like to book a consultation:\n\n• Name: ${name}\n• Email: ${email}\n• Service Needed: ${service}\n• Preferred Date: ${date}\n• Preferred Time: ${time}\n• Details: ${details}\n\nPlease confirm my appointment. Thank you!`;
